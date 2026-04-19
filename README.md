@@ -1,6 +1,6 @@
 # Task Manager API
 
-A modern REST API and web UI for managing tasks, built with Node.js, Express.js, and Supabase. Create, read, update, and delete tasks with a real-time database backend.
+A simple, modern REST API with a basic web interface for managing tasks, built using Node.js, Express.js, and Supabase. It supports full CRUD functionality, allowing users to create, read, update, and delete tasks, with data stored in a real-time database. 
 
 <br>
 
@@ -180,16 +180,6 @@ npm test         # Run tests (not yet implemented)
 - [ ] Docker containerization
 
 <br>
-
-## License
-ISC
-
-<br>
-
-## Author
-riaanHarwood
-# Task-manager-API
-A simple REST API built with Node.js and Express.js to manage tasks using a CRUD framework (create, read, update, delete)
 
 
 <br>
