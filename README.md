@@ -22,3 +22,10 @@ A simple REST API built with Node.js and Express.js to manage tasks using a CRUD
 ```bash
 npm install
 npm run dev
+
+
+
+## Run Locally
+
+
+
