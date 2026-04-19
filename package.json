@@ -21,6 +21,8 @@
   },
   "homepage": "https://github.com/riaanHarwood/Task-manager-API#readme",
   "dependencies": {
+    "@supabase/supabase-js": "^2.103.3",
+    "dotenv": "^17.4.2",
     "express": "^5.2.1"
   },
   "devDependencies": {
