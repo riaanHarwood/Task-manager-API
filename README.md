@@ -1,5 +1,7 @@
 # Task Manager API
 
+**Full-stack Project** 
+
 A simple, modern REST API with a basic web interface for managing tasks, built using Node.js, Express.js, and Supabase. It supports full CRUD functionality, allowing users to create, read, update, and delete tasks, with data stored in a real-time database. 
 
 <br>
