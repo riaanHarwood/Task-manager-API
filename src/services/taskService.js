@@ -1,29 +1,43 @@
-let tasks = [];
-let idCounter = 1;
+const supabase = require("../config/supabase");
 
-exports.createTask = (data) => {
-  const newTask = {
-    id: idCounter++,
-    title: data.title,
-    completed: false
-  };
-  tasks.push(newTask);
-  return newTask;
-};
+exports.createTask = async (data) => {
+  const { data: task, error } = await supabase
+    .from("tasks")
+    .insert([{ title: data.title }])
+    .select()
+    .single();
 
-exports.getAllTasks = () => tasks;
-
-exports.updateTask = (id, data) => {
-  const task = tasks.find(t => t.id == id);
-  if (!task) return null;
-
-  task.title = data.title ?? task.title;
-  task.completed = data.completed ?? task.completed;
-
+  if (error) throw error;
   return task;
 };
 
-exports.deleteTask = (id) => {
-  tasks = tasks.filter(t => t.id != id);
+exports.getAllTasks = async () => {
+  const { data, error } = await supabase
+    .from("tasks")
+    .select("*");
+
+  if (error) throw error;
+  return data;
+};
+
+exports.updateTask = async (id, data) => {
+  const { data: updated, error } = await supabase
+    .from("tasks")
+    .update(data)
+    .eq("id", id)
+    .select()
+    .single();
+
+  if (error) throw error;
+  return updated;
+};
+
+exports.deleteTask = async (id) => {
+  const { error } = await supabase
+    .from("tasks")
+    .delete()
+    .eq("id", id);
+
+  if (error) throw error;
 };
 
