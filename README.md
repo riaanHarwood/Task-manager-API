@@ -7,7 +7,7 @@ A simple, modern REST API with a basic web interface for managing tasks, built u
 <br>
 
 ## Features
-- ✅ Create tasks with titles
+✅ Create tasks with titles
 - ✅ View all tasks in real-time
 - ✅ Update task titles and completion status
 - ✅ Delete tasks
