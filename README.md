@@ -8,13 +8,13 @@ A simple, modern REST API with a basic web interface for managing tasks, built u
 
 ## Features
 ✅ Create tasks with titles
-- ✅ View all tasks in real-time
-- ✅ Update task titles and completion status
-- ✅ Delete tasks
-- ✅ Modern, responsive UI with inline editing
-- ✅ Error handling and validation
-- ✅ Real-time Supabase database sync
-- ✅ Row-level security with public access policies
+✅ View all tasks in real-time
+✅ Update task titles and completion status
+✅ Delete tasks
+✅ Modern, responsive UI with inline editing
+✅ Error handling and validation
+✅ Real-time Supabase database sync
+✅ Row-level security with public access policies
 
 <br>
 
